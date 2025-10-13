@@ -1,1 +1,1 @@
-# Galateegb.github.io
+https://Galateegb.github.io
