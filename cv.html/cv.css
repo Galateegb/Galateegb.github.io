@@ -1,0 +1,20 @@
+.grid {
+display: grid;
+grid-template-columns: auto 1fr ;
+gap: 24px;
+margin:0;
+padding:40px 20px;
+background:#ffdd7a;
+padding:20px;
+
+}
+
+h1 {
+text-align: right;   
+}
+h2 {
+text-align: right; 
+}
+h3{ 
+image-rendering: auto src:  ;
+}
