@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porfolio Galatée Garat-Balta</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        img {
+            display: block;
+            width: 100%;
+        }
+
+        body {
+            font-family: sans-serif;
+            background-color: rgb(54, 42, 165);
+        }
+
+        img {
+            display: block;
+            width: 100%;
+            padding: 5%;
+            box-sizing: border-box;
+        }
+
+
+        .item-01 {
+            justify-self: start;
+            align-self: end;
+        }
+
+        .header {
+            display: grid;
+            grid-template-columns: auto auto;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #4cff7f9e;
+            padding: 20px;
+            border-radius: 0px;
+            margin-bottom: 0px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            transition: transform 0.4s ease;
+
+        }
+
+        /* Classe activée quand on scroll vers le bas */
+
+        header.hidden {
+            transform: translateY(-100%);
+        }
+
+        @media (min-width: 768px) {
+            .header {
+                background-color: #0695c947;
+            }
+        }
+
+
+        .item p,
+        .item img {
+            grid-column: 1/-1;
+            grid-row: 1/-1;
+        }
+
+        .item p {
+            color: rgb(255, 255, 255);
+            font-size: 2em;
+            opacity: 0;
+        }
+
+        .item:hover p {
+            opacity: 1;
+            z-index: 1;
+        }
+
+        .item:hover img {
+            opacity: 0.2;
+
+        }
+
+    
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <h1>G.G.B</h1>
+        <nav class="header-nav">
+            <a href="À propos.html">Contact</a>
+            <a href="À propos.html">À propos</a>
+        </nav>
+    </header>
+
+    <div class="grid">
+
+        <a class="item" href="projet01.html">
+            <img src="photos-calle/totbag_sd.jpg" alt="sophie calle">
+            <p> Coffret d'artiste Sophie Calle</p>
+        </a>
+
+        <a class="item" href="projet02.html">
+            <img src="photos-zine/anthonlogie_sd.jpg" alt="couv zine ed douteuses">
+            <p> Fanzine queer</p>
+        </a>
+        <a class="item" href="projet03.html">
+            <img src="photos-duo/teteatete_sd.jpg" alt="tête à tête">
+            <p> Tête à tête</p>
+        </a>
+        <a class="item" href="projet04.html">
+            <img src="photos-clementine/clementine_sd.jpg" alt="clémentine">
+            <p> Typographie Épluche-moi</p>
+        </a>
+        <a class="item" href="projet05.html">
+            <img src="photos-opera/opera1_sd.jpg" alt="opéra">
+            <p> Fiction à l'opéra</p>
+        </a>
+        <a class="item" href="projet06.html">
+            <img src="photos-adelphe/specimentypo_sd.jpg" alt="specimen typo">
+            <p> Spécimen typo</p>
+        </a>
+        <a class="item" href="projet07.html">
+            <img src="photos-ig/revue70_sd.jpg" alt="revue années 70">
+            <p> Années 70'</p>
+        </a>
+        <a class="item" href="projet08.html">
+            <img src="photos-collage/femmes-couv.jpg" alt="collages">
+            <p> Magazines collages</p>
+        </a>
+  
+    </div>
+
+</body>
+
+</html>

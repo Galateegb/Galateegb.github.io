@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projet 05</title>
+ <link rel="stylesheet" href="style.css">
+ 
+    <style>
+    .page-title {
+    background-color:rgba(162, 126, 225, 0.784); 
+    padding: 20px;
+    border-radius: 0px;
+    margin: 0px;
+    width: 100%;
+    box-sizing: border-box; 
+    display: grid;
+    justify-content: space-between; /* titre à gauche, menu à droite */
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+        body {
+            font-family: sans-serif;
+            background-color: rgba(70, 30, 139, 0.784);
+        }
+        img {
+            width: 50%;
+            display: block;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+
+<body class="projet projet05">
+
+     <div class="page-title">
+      <h1>Fiction à l'opéra : </h1>
+       <a class="menu-link" href="index_01.html">Accueil</a>
+
+     </div>
+
+     <div class="text-block">
+    <p> Un leporello de photos dans les coulisses de <strong> l'Opéra Comique</strong> de Paris. Reprenant la légende du <em>Fantôme de l'Opéra </em> des nombreux incendies qui s'y sont déroulé, je me suis imissée dans les endroits cachés au public. Durant une soirée, entre deux changement de spectacles et des décors, j'ai immortalisé certains lieux qu'on ne voit pas, ou qu'on ne prend pas le temps de regarder. Imaginant ma propre fiction, une histoire trouble et fantasmagorique.
+   </p>
+     </div>
+
+<div class="slider-grid">
+        <img src="photos-opera/fiction-opera.jpg" class="slide active">
+        <img src="photos-opera/fiction-opera2.jpg" class="slide">
+        <img src="photos-opera/fiction-opera3.jpg" class="slide">
+        <img src="photos-opera/fiction-opera4.jpg" class="slide">
+        <img src="photos-opera/fiction-opera5.jpg" class="slide">
+        <img src="photos-opera/fiction-opera6.jpg" class="slide">
+        <img src="photos-opera/fiction-opera7.jpg" class="slide">
+        <img src="photos-opera/fiction-opera8.jpg" class="slide">
+        <img src="photos-opera/fiction-opera9.jpg" class="slide">
+        <img src="photos-opera/fiction-opera10.jpg" class="slide">
+        <img src="photos-opera/fiction-opera11.jpg" class="slide">
+        <img src="photos-opera/fiction-opera12.jpg" class="slide">
+        <img src="photos-opera/fiction-opera13.jpg" class="slide">
+        <img src="photos-opera/fiction-opera14.jpg" class="slide">
+        <img src="photos-opera/fiction-opera15.jpg" class="slide">
+        <img src="photos-opera/fiction-opera16.jpg" class="slide">
+        <img src="photos-opera/fiction-opera17.jpg" class="slide">
+        <img src="photos-opera/fiction-opera18.jpg" class="slide">
+        <img src="photos-opera/fiction-opera19.jpg" class="slide">
+        <img src="photos-opera/fiction-opera20.jpg" class="slide">
+        <img src="photos-opera/fiction-opera21.jpg" class="slide">
+        <img src="photos-opera/fiction-opera22.jpg" class="slide">
+        <img src="photos-opera/fiction-opera23.jpg" class="slide">
+        <img src="photos-opera/fiction-opera24.jpg" class="slide">
+        <img src="photos-opera/fiction-opera25.jpg" class="slide">
+        <img src="photos-opera/fiction-opera26.jpg" class="slide">
+        <img src="photos-opera/fiction-opera27.jpg" class="slide">
+        <img src="photos-opera/fiction-opera28.jpg" class="slide">
+        <img src="photos-opera/fiction-opera29.jpg" class="slide">
+        <img src="photos-opera/fiction-opera30.jpg" class="slide">
+        <img src="photos-opera/fiction-opera31.jpg" class="slide">
+        <img src="photos-opera/fiction-opera32.jpg" class="slide">
+        <img src="photos-opera/fiction-opera33.jpg" class="slide">
+        <img src="photos-opera/fiction-opera34.jpg" class="slide">
+        <img src="photos-opera/fiction-opera35.jpg" class="slide">
+        <img src="photos-opera/fiction-opera36.jpg" class="slide">
+        <img src="photos-opera/fiction-opera37.jpg" class="slide">
+        <img src="photos-opera/fiction-opera38.jpg" class="slide">
+        <img src="photos-opera/fiction-opera39.jpg" class="slide">
+        <img src="photos-opera/fiction-opera40.jpg" class="slide">
+    </div>
+
+    <button class="arrow left" onclick="prevSlide()">❮</button>
+    <button class="arrow right" onclick="nextSlide()">❯</button>
+</div>
+
+<script>
+let index = 0;
+let slides = document.querySelectorAll(".slide");
+
+function showSlide(i) {
+    slides.forEach(slide => slide.classList.remove("active"));
+    slides[i].classList.add("active");
+}
+
+function nextSlide() {
+    index = (index + 1) % slides.length;
+    showSlide(index);
+}
+
+function prevSlide() {
+    index = (index - 1 + slides.length) % slides.length;
+    showSlide(index);
+}
+</script>
+
+
+</body>
+</html> 
