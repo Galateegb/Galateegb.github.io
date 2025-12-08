@@ -1,1 +1,1 @@
-https://Galateegb.github.io/index01.html
+https://Galateegb.github.io/index.html
